@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:background="@drawable/bg_gradient"
+    ><!-- This height setting allows each element to be self contained and not take the entire height of the screen -->
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeLabel"
+        tools:text="12 PM"
+        android:layout_centerVertical="true"
+        android:textColor="#fff"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iconImageView"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/timeLabel"
+        android:layout_toEndOf="@+id/timeLabel"
+        android:src="@drawable/cloudy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/temperatureLabel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="24sp"
+        android:textColor="#fff"
+        tools:text="100"
+        android:layout_alignParentTop="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/summaryLabel"
+        android:textColor="#fff"
+        tools:text="Partly cloudy"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iconImageView"
+        android:layout_toEndOf="@+id/iconImageView"
+        android:layout_toLeftOf="@+id/temperatureLabel"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="false"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"/>
+
+
+</RelativeLayout>
